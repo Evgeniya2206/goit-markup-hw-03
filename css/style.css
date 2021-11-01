@@ -22,10 +22,10 @@ body {
   letter-spacing: 0.03em;
 }
 .conteiner {
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
-  margin: 0;
-  padding: 0;
-  border: 0px;
+  padding: 0 15px;
 }
 
 .header {
@@ -122,6 +122,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -172,25 +173,24 @@ img {
 }
 .feature-list {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-item-first .feature-list {
+.feature-list > .item {
+  flex-basis: calc(100% / 4-30px);
 }
-.item .feature-list {
-  display: flex;
-  justify-content: space-between;
+.feature-list .title {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  margin-bottom: 10px;
 }
 
 /* Преимущества */
 
-.feature-list > .title {
+.feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -202,6 +202,9 @@ item-first .feature-list {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 /* Примеры работ */
@@ -278,12 +281,19 @@ item-first .feature-list {
 }
 
 /* Портфолио */
+.portfolio {
+  background-color: #ffffff;
+}
+
 .filtr {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  padding: 6px 22px;
+  margin-top: 94px;
+  margin-left: 8px;
 }
 .filtr:hover,
 .filtr:focus {
@@ -306,4 +316,37 @@ item-first .feature-list {
 .currents {
   color: var(--primary-bg-color);
   background-color: var(--accent);
+}
+.portfolio-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.portfolio-item > .portfolio-button {
+  flex-basis: calc(100% / 5-8px);
+  margin-bottom: 50px;
+}
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  margin-bottom: 94px;
+}
+.second > .filtrs {
+  flex-basis: calc (100% / 9-30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.card-cont {
+  padding: 20px 24px;
+  margin: 0;
+}
+.card-cont > .title {
+  margin: 0;
+}
+.card-cont > .description {
+  margin: 0;
 }
