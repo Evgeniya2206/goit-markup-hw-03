@@ -160,7 +160,6 @@ img {
 }
 .section {
   display: block;
-  margin-bottom: 94px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -208,6 +207,9 @@ img {
 }
 
 /* Примеры работ */
+.works {
+  padding-top: 94px;
+}
 
 .card-set {
   display: flex;
@@ -229,7 +231,8 @@ img {
 .team {
   background-color: #f5f4fa;
   display: block;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .card-names {
   display: flex;
@@ -283,6 +286,8 @@ img {
 /* Портфолио */
 .portfolio {
   background-color: #ffffff;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .filtr {
@@ -292,7 +297,6 @@ img {
   font-size: 16px;
   line-height: 1.62;
   padding: 6px 22px;
-  margin-top: 94px;
   margin-left: 8px;
 }
 .filtr:hover,
@@ -333,7 +337,6 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: 94px;
 }
 .second > .filtrs {
   flex-basis: calc (100% / 9-30px);
