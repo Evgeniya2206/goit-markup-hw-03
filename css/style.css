@@ -28,83 +28,74 @@ body {
   padding: 0 15px;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-  display: flex;
-}
-
-.list-nav,
-.lists {
-  justify-content: space-between;
-  padding-left: 0px;
-  display: flex;
-  margin-left: auto;
-  margin-right: 0;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  list-style: none;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
   list-style: none;
 }
-.list-nav .link {
-  margin-left: 50px;
-}
-.link {
-  text-decoration: none;
-}
 
-.user {
-  color: var(--primary-text-color);
-  font-weight: 500;
-}
-.tel {
-  margin-left: 50px;
-}
-.user:hover {
-  color: var(--accent);
+/* хедер */
+.header {
+  border-bottom: 1px solid #ececec;
+  display: flex;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin: 24px 93px 25px 0;
+  margin-right: 93px;
 }
 .logo-color {
   color: var(--accent);
 }
-.footer-logo {
-  color: #ffffff;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+
+.lists {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+.user {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
-  margin-left: 0;
-  margin-top: 60px;
 }
 
-.footer {
-  background-color: #2f303a;
-  height: 252px;
+.user:hover {
+  color: var(--accent);
+}
+.link-header {
+  margin-left: 50px;
+  align-items: center;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 /* Навигация */
 .site-nav {
   display: flex;
 }
-.item {
-  margin-left: 30px;
+.list-nav {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  margin: 0 331px 0 0;
 }
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -114,6 +105,14 @@ img {
 .site-nav .link:hover,
 .site-nav .link.current {
   color: var(--accent);
+}
+
+.link {
+  display: block;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Герой */
@@ -205,6 +204,9 @@ img {
   margin-bottom: 0;
   padding: 0;
 }
+.item {
+  margin-left: 30px;
+}
 
 /* Примеры работ */
 .works {
@@ -262,11 +264,22 @@ img {
 
 /* футер */
 .footer {
-  height: 252px;
+  background-color: #2f303a;
   display: block;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  margin: 0;
+}
+
 .address {
   color: #ffffff;
   font-size: 14px;
@@ -279,7 +292,10 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.17;
+  text-decoration: none;
   display: block;
+}
+.size {
   margin-bottom: 9px;
 }
 
