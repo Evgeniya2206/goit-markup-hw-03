@@ -82,7 +82,7 @@ img {
   color: var(--accent);
 }
 .link-header {
-  margin-left: 50px;
+  margin: 0 0 0 50px;
 }
 
 /* Навигация */
@@ -93,14 +93,10 @@ img {
   padding-left: 0px;
   display: flex;
   align-items: center;
+  color: var(--title-text-color);
+  margin: 0;
 }
 
-.site-nav > .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-}
 .site-nav .link:hover,
 .site-nav .link.current {
   color: var(--accent);
@@ -109,6 +105,10 @@ img {
 .link {
   display: flex;
   align-items: center;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -301,16 +301,19 @@ img {
 /* Портфолио */
 .portfolio {
   background-color: #ffffff;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  margin-bottom: 94px;
+}
+.first {
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .filtr {
-  color: var(--title-text-color);
   background-color: #f5f4fa;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  padding: 6px 22px;
+}
+.filtr-new {
+  background-color: #f5f4fa;
   padding: 6px 22px;
   margin-left: 8px;
 }
@@ -319,19 +322,23 @@ img {
   background-color: var(--accent);
   color: #ffffff;
 }
-.lists .title {
+.card-cont > .title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
+  margin: 0;
+  padding: 0;
 }
-
-.link .description {
+.description {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
+  margin: 0;
+  padding: 0;
 }
+
 .currents {
   color: var(--primary-bg-color);
   background-color: var(--accent);
@@ -345,26 +352,29 @@ img {
 }
 .portfolio-item > .portfolio-button {
   flex-basis: calc(100% / 5-8px);
-  margin-bottom: 50px;
 }
+
 .second {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
+  margin-top: -30px;
 }
 .second > .filtrs {
-  flex-basis: calc (100% / 9-30px);
+  flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 .card-cont {
   padding: 20px 24px;
-  margin: 0;
 }
 .card-cont > .title {
-  margin: 0;
+  margin: 0 0 4px 0;
+  padding: 0;
 }
 .card-cont > .description {
   margin: 0;
+}
+.links {
+  text-decoration: none;
 }
