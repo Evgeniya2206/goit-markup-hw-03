@@ -40,8 +40,10 @@ img {
 
 /* хедер */
 .header {
-  display: flex;
   border-bottom: 1px solid #ececec;
+}
+.header-second {
+  display: flex;
 }
 
 .logo {
@@ -84,6 +86,9 @@ img {
 .link-header {
   margin: 0 0 0 50px;
 }
+.link-header:first-child {
+  margin-left: 0;
+}
 
 /* Навигация */
 .site-nav {
@@ -115,12 +120,12 @@ img {
 }
 
 /* Герой */
+
 .hero {
   background-color: var(--secondary-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -149,13 +154,7 @@ img {
 }
 
 /* Секция */
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+
 .section {
   display: block;
 }
@@ -168,24 +167,33 @@ img {
   margin-top: 0;
   margin-bottom: 50px;
 }
+
+/* Преимущества */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.feature-section {
+  padding-top: 94px;
+}
+
 .feature-list {
   display: flex;
-  justify-content: space-between;
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0;
 }
 .feature-list > .item {
-  flex-basis: calc(100% / 4-30px);
+  width: 270px;
+  margin-left: 30px;
 }
-.feature-list .title {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  margin-bottom: 10px;
+.feature-list > .item:first-child {
+  margin-left: 0;
 }
-
-/* Преимущества */
 
 .feature-list .title {
   color: var(--title-text-color);
@@ -193,6 +201,10 @@ img {
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 .feature-list .text {
   color: var(--primary-text-color);
@@ -203,9 +215,6 @@ img {
   margin-bottom: 0;
   padding: 0;
 }
-.item {
-  margin-left: 30px;
-}
 
 /* Примеры работ */
 .works {
@@ -214,36 +223,42 @@ img {
 
 .card-set {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
 .card-set > .card {
-  flex-basis: calc(100% / 3-30px);
+  margin-left: 50px;
+}
+.card-set > .card:first-child {
+  margin-left: 0;
 }
 
 /* Наша команда */
+
+.team {
+  background-color: #f5f4fa;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .card-contant {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   background: #ffffff;
 }
-.team {
-  background-color: #f5f4fa;
-  display: block;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .card-names {
   display: flex;
-  justify-content: space-between;
+
   padding: 0;
   margin: 0;
   border: #f5f4fa;
 }
 .card-names > .names {
-  flex-basis: calc(100% / 4-30px);
+  margin-left: 50px;
+}
+.card-names > .names:first-child {
+  margin-left: 0;
 }
 
 .name {
@@ -264,7 +279,6 @@ img {
 /* футер */
 .footer {
   background-color: #2f303a;
-  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -293,30 +307,35 @@ img {
   line-height: 1.17;
   text-decoration: none;
   display: block;
-}
-.size {
   margin-bottom: 9px;
 }
-
+.footer-link:last-child {
+  margin-bottom: 0;
+}
 /* Портфолио */
 .portfolio {
   background-color: #ffffff;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.first {
-  margin-top: 94px;
-  margin-bottom: 50px;
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .filtr {
   background-color: #f5f4fa;
   padding: 6px 22px;
+  border-radius: 0;
 }
-.filtr-new {
-  background-color: #f5f4fa;
-  padding: 6px 22px;
+.portfolio-button {
   margin-left: 8px;
 }
+.portfolio-button:first-child {
+  margin-left: 0;
+}
+
 .filtr:hover,
 .filtr:focus {
   background-color: var(--accent);
@@ -343,20 +362,12 @@ img {
   color: var(--primary-bg-color);
   background-color: var(--accent);
 }
-.portfolio-item {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-.portfolio-item > .portfolio-button {
-  flex-basis: calc(100% / 5-8px);
-}
 
 .second {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 34px;
   margin-left: -30px;
   margin-top: -30px;
 }
