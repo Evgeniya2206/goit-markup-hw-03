@@ -368,6 +368,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-top: 34px;
+  padding-left: 0;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -378,13 +379,10 @@ img {
 }
 .card-cont {
   padding: 20px 24px;
+  margin: 0;
 }
 .card-cont > .title {
   margin: 0 0 4px 0;
-  padding: 0;
-}
-.card-cont > .description {
-  margin: 0;
 }
 .links {
   text-decoration: none;
